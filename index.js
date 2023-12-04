@@ -82,3 +82,69 @@ function showProperties(objecteee){
 
 //-------------------------------------
 //sum of muliples of 3 and 5
+
+let limit=10;
+
+console.log(sum(limit))
+
+function sum(limit){
+    let sum=0
+    for(let i=0 ; i<=limit ; i++){
+        if(i % 3 ===0 || i%5===0)
+            sum +=i;
+    }
+    return sum;
+}
+
+//-------------------------------------
+//Grade
+const marks=[80, 80,50];
+
+console.log(calculateGrade(marks))
+
+function calculateGrade(marks){
+    const average=calculateAverage(marks);
+
+    if(average<60)  return'F';
+    if(average<70)  return'D';
+    if(average<80)  return'C';
+    if(average<90)  return'B';
+    if(average<=100)  return'A';
+}
+
+function calculateAverage(array){
+    let sum=0;
+    for(let value of array)
+    sum +=value;
+    return average =sum/array.length
+}
+
+//-----------------------------------
+//show stars
+
+showStarts(3);
+function showStarts(rows){
+    for(let i =0;i<rows;i++){
+        console.log('');
+        for(let x=0;x<=i;x++)
+        console.log('*');
+    }
+}
+
+//-------------------------------------
+//Prime Numbers
+
+showPrimes(30);
+
+function showPrimes(limit){
+    for(let number=2 ; number<=limit; number++)
+        if (isPrime(number)) console.log(number);  
+}
+
+function isPrime(number){
+    for(let factor=2; factor<number; factor++)
+        if(number % factor === 0 )
+            return false;
+
+    return true;
+}

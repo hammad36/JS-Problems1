@@ -1,4 +1,4 @@
-
+// fizzBazz algorithm
 console.log(fizzBazz('mo'));
 
 function fizzBazz(input){

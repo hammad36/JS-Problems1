@@ -1,3 +1,2 @@
 # JavaScript control flow problems
-for anyone 
-star it 
+Your support means the world to me, so if you find it interesting or useful, please consider giving it a ⭐️ on GitHub! 🙌
